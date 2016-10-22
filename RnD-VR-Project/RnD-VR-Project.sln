@@ -1,12 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RnD-VR-Project.CSharp", "RnD-VR-Project.CSharp.csproj", "{83A13C20-DA53-CA2A-B3C1-984EE98BC797}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RnD-VR-Project.CSharp.Editor", "RnD-VR-Project.CSharp.Editor.csproj", "{BEEBB4FA-4BEF-3C5B-1521-0E98825F0239}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83A13C20-DA53-CA2A-B3C1-984EE98BC797}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A13C20-DA53-CA2A-B3C1-984EE98BC797}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A13C20-DA53-CA2A-B3C1-984EE98BC797}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A13C20-DA53-CA2A-B3C1-984EE98BC797}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEEBB4FA-4BEF-3C5B-1521-0E98825F0239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEEBB4FA-4BEF-3C5B-1521-0E98825F0239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEEBB4FA-4BEF-3C5B-1521-0E98825F0239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEEBB4FA-4BEF-3C5B-1521-0E98825F0239}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
