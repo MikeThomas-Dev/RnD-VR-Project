@@ -444,7 +444,7 @@ PlayerSettings:
   WebGL::VR::enable: 0
   WebPlayer::VR::enable: 0
   WiiU::VR::enable: 0
-  Xbox360::VR::enable: 0
+  Xbox360::VR::enable: 1
   XboxOne::VR::enable: 0
   XboxOne::enus: 1
   iOS::VR::enable: 0

@@ -1,6 +1,7 @@
 ﻿// Interact Grab|Scripts|0180
 namespace VRTK
 {
+    using System.Timers;
     using UnityEngine;
 
     /// <summary>
@@ -58,6 +59,7 @@ namespace VRTK
         private int grabEnabledState = 0;
         private float grabPrecognitionTimer = 0f;
         private GameObject undroppableGrabbedObject;
+        private Timer MyTestTimer = new Timer(500);
 
         public virtual void OnControllerGrabInteractableObject(ObjectInteractEventArgs e)
         {
@@ -139,11 +141,30 @@ namespace VRTK
                 undroppableGrabbedObject = null;
             }
 
-            GetComponent<VRTK_ControllerEvents>().AliasGrabOn += new ControllerInteractionEventHandler(DoGrabObject);
-            GetComponent<VRTK_ControllerEvents>().AliasGrabOff += new ControllerInteractionEventHandler(DoReleaseObject);
+            GetComponent<VRTK_ControllerEvents>().TriggerClicked += new ControllerInteractionEventHandler(DoGrabObject);
+            GetComponent<VRTK_ControllerEvents>().TriggerReleased += new ControllerInteractionEventHandler(DoReleaseObject);
+
+            //Timer configuration
+            //MyTestTimer.AutoReset = true;
+            //MyTestTimer.Elapsed += MyTestTimer_Elapsed;
+            //MyTestTimer.Start();
 
             SetControllerAttachPoint();
         }
+
+        /// <summary>
+        /// Gets the coordinates of the grabbed object and logs it
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        //private void MyTestTimer_Elapsed(object sender, ElapsedEventArgs e)
+        //{
+        //    if (grabbedObject != null)
+        //    {
+        //        Vector3 objPos = grabbedObject.transform.position;
+        //        Debug.Log("Object coordinates [x/y/z]: " + objPos.x.ToString() + " " + objPos.y.ToString() + " " + objPos.z.ToString());
+        //    }
+        //}
 
         private void OnDisable()
         {
@@ -159,8 +180,8 @@ namespace VRTK
                 }
             }
             ForceRelease();
-            GetComponent<VRTK_ControllerEvents>().AliasGrabOn -= new ControllerInteractionEventHandler(DoGrabObject);
-            GetComponent<VRTK_ControllerEvents>().AliasGrabOff -= new ControllerInteractionEventHandler(DoReleaseObject);
+            GetComponent<VRTK_ControllerEvents>().TriggerClicked -= new ControllerInteractionEventHandler(DoGrabObject);
+            GetComponent<VRTK_ControllerEvents>().TriggerReleased -= new ControllerInteractionEventHandler(DoReleaseObject);
         }
 
         private void SetControllerAttachPoint()
@@ -235,6 +256,8 @@ namespace VRTK
                 obj.transform.rotation = controllerAttachPoint.transform.rotation * Quaternion.Euler(snapHandle.transform.localEulerAngles);
                 obj.transform.position = controllerAttachPoint.transform.position - (snapHandle.transform.position - obj.transform.position);
             }
+
+            
         }
 
         private void SnapObjectToGrabToController(GameObject obj)
@@ -566,6 +589,12 @@ namespace VRTK
 
         private void Update()
         {
+            if (grabbedObject != null)
+            {
+                Vector3 objPos = grabbedObject.transform.position;
+                Debug.Log( grabbedObject.name + " coordinates [x/y/z]: " + objPos.x.ToString() + " " + objPos.y.ToString() + " " + objPos.z.ToString());
+            }
+
             if (controllerAttachPoint == null)
             {
                 SetControllerAttachPoint();
@@ -573,9 +602,9 @@ namespace VRTK
 
             if (createRigidBodyWhenNotTouching && grabbedObject == null)
             {
-                if (!interactTouch.IsRigidBodyForcedActive() && interactTouch.IsRigidBodyActive() != controllerEvents.grabPressed)
+                if (!interactTouch.IsRigidBodyForcedActive() && interactTouch.IsRigidBodyActive() != controllerEvents.triggerClicked)
                 {
-                    interactTouch.ToggleControllerRigidBody(controllerEvents.grabPressed);
+                    interactTouch.ToggleControllerRigidBody(controllerEvents.triggerClicked);
                 }
             }
 
