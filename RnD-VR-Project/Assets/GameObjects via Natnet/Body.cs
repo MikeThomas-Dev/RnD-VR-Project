@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Xml;
+using System;
 
 //=============================================================================----
 // Copyright © NaturalPoint, Inc. All Rights Reserved.
@@ -129,12 +130,24 @@ public class Body : MonoBehaviour {
 
             bone = GameObject.Find(objectName);
 
+            //This is, where the new RigidBody is created. Everything we want to change to the rigidbody must happen here.
+            //Weitere Ansätze:
+            //  Code von Alexander Kerschbaumer anschauen, wie er herausfindet, wie die Rigidbodies heißen.
+            //  Dann Abfrage und entsprechend dann den Rigidbody bauen.
+            //  Hierbei eventuel den Rigidbody irgendwie vordefinieren.
             if (bone == null)
             {
-                bone = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                Vector3 scale = new Vector3(0.1f, 0.1f, 0.1f);
+                //PA_Drone.fbx
+                //bone = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                UnityEngine.Object prefab = Resources.Load("PA_Drone");
+                GameObject t = (GameObject)Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity);
+                bone = t;
+
+                Vector3 scale = new Vector3(50f, 50f, 50f);
                 bone.transform.localScale = scale;
                 bone.name = objectName;
+                Rigidbody gameObjectsRigidBody = bone.AddComponent<Rigidbody>(); // Add the rigidbody.
+                gameObjectsRigidBody.mass = 5; // Set the GO's mass to 5 via the Rigidbody.
             }
 
             //== set bone's pose ==--
@@ -147,6 +160,6 @@ public class Body : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-	
+	    
 	}
 }
