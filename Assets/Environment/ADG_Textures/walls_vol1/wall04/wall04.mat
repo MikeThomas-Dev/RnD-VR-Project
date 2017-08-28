@@ -8,222 +8,114 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: wall04
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _NORMALMAP
-  m_LightmapFlags: 5
+  m_ShaderKeywords: _EMISSION _NORMALMAP
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
+  disabledShaderPasses: []
   m_SavedProperties:
-    serializedVersion: 2
+    serializedVersion: 3
     m_TexEnvs:
-    - first:
-        name: _BumpMap
-      second:
+    - _BumpMap:
         m_Texture: {fileID: 2800000, guid: ca579d8e5d5cfa34497f649a583c86d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _Cube
-      second:
+    - _Cube:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _DetailAlbedoMap
-      second:
+    - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _DetailMask
-      second:
+    - _DetailMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _DetailNormalMap
-      second:
+    - _DetailNormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _EmissionMap
-      second:
+    - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _HeightMap
-      second:
+    - _HeightMap:
         m_Texture: {fileID: 2800000, guid: 3941732a60431e841bc6108f493ac81d, type: 3}
         m_Scale: {x: 0.5, y: 0.5}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _MainTex
-      second:
+    - _MainTex:
         m_Texture: {fileID: 2800000, guid: 2a681bf3b6783434db82bcad6167594b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _MetallicGlossMap
-      second:
+    - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _OcclusionMap
-      second:
+    - _OcclusionMap:
         m_Texture: {fileID: 2800000, guid: f3179584e2bb95447990091b79e23249, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _ParallaxMap
-      second:
+    - _ParallaxMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _mipFilterTex
-      second:
+    - _mipFilterTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - first:
-        name: _BINARY_STEPS
-      second: 6
-    - first:
-        name: _BumpScale
-      second: 1
-    - first:
-        name: _Cutoff
-      second: 0.5
-    - first:
-        name: _DIST_STEPS
-      second: 20
-    - first:
-        name: _DetailNormalMapScale
-      second: 1
-    - first:
-        name: _DstBlend
-      second: 0
-    - first:
-        name: _EmissionScaleUI
-      second: 0
-    - first:
-        name: _ExtrudeHeight
-      second: 0.05
-    - first:
-        name: _GlossFromBrightness_exponent
-      second: 8
-    - first:
-        name: _GlossFromBrightness_multiplicator
-      second: 0.3333
-    - first:
-        name: _Glossiness
-      second: 0.3
-    - first:
-        name: _LightmapShading
-      second: 0.7
-    - first:
-        name: _Metallic
-      second: 0
-    - first:
-        name: _Mode
-      second: 0
-    - first:
-        name: _OcclusionStrength
-      second: 0.45
-    - first:
-        name: _Parallax
-      second: 0.008358208
-    - first:
-        name: _RMS
-      second: 0.20974624
-    - first:
-        name: _Rot
-      second: 0
-    - first:
-        name: _SHADOW_SMOOTH_STEPS
-      second: 4
-    - first:
-        name: _SHADOW_STEPS
-      second: 20
-    - first:
-        name: _SelfShadowStrength
-      second: 0.32692307
-    - first:
-        name: _ShadeRange
-      second: 0.02
-    - first:
-        name: _ShadingStrength
-      second: 0
-    - first:
-        name: _ShadowSmoothing
-      second: 1.9409615
-    - first:
-        name: _Shininess
-      second: 0.92699635
-    - first:
-        name: _SidewallTextureOffset
-      second: -1
-    - first:
-        name: _SrcBlend
-      second: 1
-    - first:
-        name: _UVSec
-      second: 0
-    - first:
-        name: _Volume2TangetSideDist
-      second: 0.01
-    - first:
-        name: _Volume2TangetTopDist
-      second: 0.05
-    - first:
-        name: _WAVELENGTH
-      second: 1
-    - first:
-        name: _WAVELENGTH_SHADOWS
-      second: 8
-    - first:
-        name: _ZWrite
-      second: 1
-    - first:
-        name: _distance_start
-      second: 10
-    - first:
-        name: _distance_transition
-      second: 33.46154
+    - _BINARY_STEPS: 6
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DIST_STEPS: 20
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EmissionScaleUI: 0
+    - _ExtrudeHeight: 0.05
+    - _GlossFromBrightness_exponent: 8
+    - _GlossFromBrightness_multiplicator: 0.3333
+    - _GlossMapScale: 1
+    - _Glossiness: 0.3
+    - _GlossyReflections: 1
+    - _LightmapShading: 0.7
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 0.45
+    - _Parallax: 0.008358208
+    - _RMS: 0.20974624
+    - _Rot: 0
+    - _SHADOW_SMOOTH_STEPS: 4
+    - _SHADOW_STEPS: 20
+    - _SelfShadowStrength: 0.32692307
+    - _ShadeRange: 0.02
+    - _ShadingStrength: 0
+    - _ShadowSmoothing: 1.9409615
+    - _Shininess: 0.92699635
+    - _SidewallTextureOffset: -1
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _Volume2TangetSideDist: 0.01
+    - _Volume2TangetTopDist: 0.05
+    - _WAVELENGTH: 1
+    - _WAVELENGTH_SHADOWS: 8
+    - _ZWrite: 1
+    - _distance_start: 10
+    - _distance_transition: 33.46154
     m_Colors:
-    - first:
-        name: _Color
-      second: {r: 0.9117647, g: 0.9117647, b: 0.9117647, a: 1}
-    - first:
-        name: _EmissionColor
-      second: {r: 0, g: 0, b: 0, a: 0}
-    - first:
-        name: _EmissionColorUI
-      second: {r: 1, g: 1, b: 1, a: 1}
-    - first:
-        name: _ReflectColor
-      second: {r: 1, g: 1, b: 1, a: 0.5}
-    - first:
-        name: _ReliefTransform
-      second: {r: 1, g: 1, b: 0, a: 0}
-    - first:
-        name: _SilhouetteUV_border
-      second: {r: 0, g: 1, b: 0, a: 1}
-    - first:
-        name: _SpecColor
-      second: {r: 0.57462686, g: 0.57462686, b: 0.57462686, a: 1}
-    - first:
-        name: _TangentToTexCurvatureScale
-      second: {r: 1, g: 1, b: 1, a: 1}
-    - first:
-        name: _World2VolumeDepthMinMax
-      second: {r: 0, g: 1, b: 0, a: 0}
-    - first:
-        name: _World2VolumeScale
-      second: {r: 1, g: 1, b: 0, a: 0}
+    - _Color: {r: 0.9117647, g: 0.9117647, b: 0.9117647, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
+    - _ReflectColor: {r: 1, g: 1, b: 1, a: 0.5}
+    - _ReliefTransform: {r: 1, g: 1, b: 0, a: 0}
+    - _SilhouetteUV_border: {r: 0, g: 1, b: 0, a: 1}
+    - _SpecColor: {r: 0.57462686, g: 0.57462686, b: 0.57462686, a: 1}
+    - _TangentToTexCurvatureScale: {r: 1, g: 1, b: 1, a: 1}
+    - _World2VolumeDepthMinMax: {r: 0, g: 1, b: 0, a: 0}
+    - _World2VolumeScale: {r: 1, g: 1, b: 0, a: 0}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6

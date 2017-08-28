@@ -57,7 +57,8 @@ Shader "Grid"
 		// FRAGMENT SHADER
 		float4 frag(vertexOutput input) : COLOR
 		{
-			if (frac(input.worldPos.x / _GridSpacing) < _GridThickness || frac(input.worldPos.y / _GridSpacing) < _GridThickness) {
+			if (frac(input.worldPos.x / _GridSpacing) < _GridThickness || frac(input.worldPos.y / _GridSpacing) < _GridThickness) 
+			{
 				return _GridColour;
 			}
 			else {
