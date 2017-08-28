@@ -1,4 +1,6 @@
-﻿Shader "Custom/Transparent Specular" {
+﻿//https://alastaira.wordpress.com/2013/12/21/glass-shader/
+
+Shader "Custom/Transparent Specular" {
 	Properties{
 		_MainTex("Base (RGB)", 2D) = "white" {}
 

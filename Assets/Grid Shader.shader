@@ -1,6 +1,8 @@
 ﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
+//https://forum.unity3d.com/threads/wireframe-grid-shader.60071/
+
 Shader "Grid"
 {
 	Properties
