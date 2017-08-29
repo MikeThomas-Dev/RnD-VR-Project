@@ -145,7 +145,6 @@
     <Compile Include="Assets\VRTK\Scripts\Controls\2D\RadialMenu\Editor\RadialMenuInspector.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Environment\Packs\BirchPackVol1\Works For Fun.txt" />
     <None Include="Assets\Environment\SFBayStudios\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\Environment\SFBayStudios\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
     <None Include="Assets\Environment\SFBayStudios\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
@@ -308,6 +307,7 @@
     <None Include="Assets\Environment\Stonewall\readme.txt" />
     <None Include="Assets\Glass.shader" />
     <None Include="Assets\Grid Shader.shader" />
+    <None Include="Assets\Inside sphere.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
