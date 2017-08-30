@@ -1,0 +1,1 @@
+To use this scripts, add the tag "Door" to the doors and "detective" script to player controller (With "player" tag). Copyright by Alexander Ameye.
