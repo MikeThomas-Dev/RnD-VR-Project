@@ -84,9 +84,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DoorPack\SCRIPTS\Detection.cs" />
-    <Compile Include="Assets\DoorPack\SCRIPTS\Door.cs" />
     <Compile Include="Assets\DronePos.cs" />
+    <Compile Include="Assets\Environment\DoorPack\SCRIPTS\Detection.cs" />
+    <Compile Include="Assets\Environment\DoorPack\SCRIPTS\Door.cs" />
     <Compile Include="Assets\Environment\SFBayStudios\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
     <Compile Include="Assets\Environment\SFBayStudios\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
     <Compile Include="Assets\Environment\SFBayStudios\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
@@ -519,7 +519,7 @@
     <Compile Include="Assets\VRTK\SDK\Ximmerse\SDK_XimmerseVRSystem.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\DoorPack\SCRIPTS\README.txt" />
+    <None Include="Assets\Environment\DoorPack\SCRIPTS\README.txt" />
     <None Include="Assets\Environment\SFBayStudios\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\Environment\SFBayStudios\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
     <None Include="Assets\Environment\SFBayStudios\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
