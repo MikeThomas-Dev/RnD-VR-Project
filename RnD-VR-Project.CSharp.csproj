@@ -85,6 +85,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\DronePos.cs" />
+    <Compile Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Scripts\SCG_Base_Controller.cs" />
+    <Compile Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\AntiAliasing.cs" />
+    <Compile Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\Common\ImageEffectHelper.cs" />
+    <Compile Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\Common\RenderTexureUtility.cs" />
+    <Compile Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\DepthOfField\DepthOfField.cs" />
+    <Compile Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\ScreenSpaceReflection\ScreenSpaceReflection.cs" />
+    <Compile Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\TonemappingColorGrading.cs" />
     <Compile Include="Assets\Environment\DoorPack\SCRIPTS\Detection.cs" />
     <Compile Include="Assets\Environment\DoorPack\SCRIPTS\Door.cs" />
     <Compile Include="Assets\Environment\SFBayStudios\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
@@ -519,6 +526,17 @@
     <Compile Include="Assets\VRTK\SDK\Ximmerse\SDK_XimmerseVRSystem.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Readme.txt" />
+    <None Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\Shaders\SMAA.cginc" />
+    <None Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\Shaders\SMAA.shader" />
+    <None Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\DepthOfField\Shaders\BokehSplatting.shader" />
+    <None Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\DepthOfField\Shaders\DepthOfField.shader" />
+    <None Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\DepthOfField\Shaders\MedianFilter.shader" />
+    <None Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\ScreenSpaceReflection\Shaders\ScreenSpaceRaytrace.cginc" />
+    <None Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\ScreenSpaceReflection\Shaders\ScreenSpaceReflection.shader" />
+    <None Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Shaders\Histogram.compute" />
+    <None Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Shaders\TonemappingColorGrading.shader" />
+    <None Include="Assets\Environment\Cardboard realistic boxes [HQ,Free]\SCG_Showcase_Modules\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Shaders\TonemappingColorGradingHistogram.shader" />
     <None Include="Assets\Environment\DoorPack\SCRIPTS\README.txt" />
     <None Include="Assets\Environment\SFBayStudios\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\Environment\SFBayStudios\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
